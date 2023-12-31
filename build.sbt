@@ -18,7 +18,6 @@ nativeConfig := {
     .withLinkingOptions(
       List("-ltree-sitter", "-ltree-sitter-json", "-L", "/usr/local/lib/")
     )
-    .withCompileOptions(List(s"-I${base / "src" / "main" / "resources" / "scala-native"}") ++ c.compileOptions)
 }
 
 import bindgen.interface.Binding
